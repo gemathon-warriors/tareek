@@ -1,6 +1,7 @@
 # Tareek
 [![Gem Version](https://badge.fury.io/rb/tareek.png)](http://badge.fury.io/rb/tareek)
 [![Build Status](https://travis-ci.org/gemathon-warriors/tareek.png?branch=master)](https://travis-ci.org/gemathon-warriors/tareek)
+[![Code Climate](https://codeclimate.com/github/gemathon-warriors/tareek.png)](https://codeclimate.com/github/gemathon-warriors/tareek)
 [![Dependency Status](https://gemnasium.com/gemathon-warriors/tareek.png)](https://gemnasium.com/gemathon-warriors/tareek)
 
 It gives you dates like, middle of the month, middle of next month etc.
