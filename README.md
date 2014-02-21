@@ -1,5 +1,5 @@
 # Tareek
-[![GitHub version](https://badge.fury.io/gh/tareek.png)](http://badge.fury.io/gh/tareek)
+[![Gem Version](https://badge.fury.io/rb/tareek.png)](http://badge.fury.io/rb/tareek)
 [![Build Status](https://travis-ci.org/gemathon-warriors/tareek.png?branch=master)](https://travis-ci.org/gemathon-warriors/tareek)
 [![Coverage Status](https://coveralls.io/repos/gemathon-warriors/tareek/badge.png)](https://coveralls.io/r/gemathon-warriors/tareek)
 
