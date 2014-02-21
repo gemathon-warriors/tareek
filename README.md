@@ -1,6 +1,6 @@
 # Tareek
 
-TODO: Write a gem description
+It gives you dates like, middle of the month, middle of next month etc.
 
 ## Installation
 
