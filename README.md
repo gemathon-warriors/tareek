@@ -1,4 +1,4 @@
-#[Tareek](http://documentup.com/gemathon-warriors/tareek) 
+#[Tareek](http://documentup.com/gemathon-warriors/tareek) ### The graceful date handler !
 
 [![Gem Version](https://badge.fury.io/rb/tareek.png)](http://badge.fury.io/rb/tareek)
 [![Build Status](https://travis-ci.org/gemathon-warriors/tareek.png?branch=master)](https://travis-ci.org/gemathon-warriors/tareek)
