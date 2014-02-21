@@ -5,6 +5,8 @@
 
 It gives you dates like, middle of the month, middle of next month etc.
 
+[Documentation](http://documentup.com/gemathon-warriors/tareek) 
+
 ## Installation
 
 Add this line to your application's Gemfile:
