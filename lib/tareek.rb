@@ -72,12 +72,12 @@ module Tareek
        Time.now.strftime('%m-%d-%Y')
       end
 
-      def weekday?(day)
-       convert_to_date(day).wday <= 5
-      end
-
       def weekend?(day)
-       convert_to_date(day).wday > 5 
+       [0,6].include?(convert_to_date(day).wday) 
+      end
+      
+      def weekday?(day)
+       !(weekend?(day))
       end
 
     end
