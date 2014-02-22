@@ -64,7 +64,22 @@ module Tareek
         (date.kind_of? Date) ? date : Date.parse(date)
       end
 
-    end
+      def today_date_in_dd_mm_yy_format
+       Time.now.strftime('%d-%m-%Y')
+      end
 
+      def today_date_in_mm_dd_yy_format
+       Time.now.strftime('%m-%d-%Y')
+      end
+
+      def weekday?(day)
+       convert_to_date(day).wday <= 5
+      end
+
+      def weekend?(day)
+       convert_to_date(day).wday > 5 
+      end
+
+    end
   end
 end
