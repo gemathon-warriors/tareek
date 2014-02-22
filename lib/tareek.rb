@@ -10,6 +10,9 @@ module Tareek
   class Dates
     class << self
 
+      DAYS_IN_A_MONTH = [nil, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+      MONTHS = [nil, "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct","Nov", "Dec"]
+
       def get_middle_of_next_month_date(year, month)
         (parse_date(month,year) + 45 * 24 * 60 * 60).to_date
       end
@@ -78,6 +81,16 @@ module Tareek
       
       def weekday?(day)
        !(weekend?(day))
+      end
+
+      def days_in_a_month_of(month, year)
+       month = MONTHS.index(month)
+       return 29 if(month == 2 && Date.leap?(year.to_i))
+       DAYS_IN_A_MONTH[month] 
+      end
+
+      def feb_month_of_28_days_for?(year)
+       days_in_a_month_of("Feb", year.to_i) == 28
       end
 
     end
