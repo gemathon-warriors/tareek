@@ -47,16 +47,6 @@ describe "Humanize Dates :: " do
     humanized_date.should == "12/01/2014 12:00:00 AM"
   end
 
-  it "should return today date in dd-mm-yyyy format" do
-    today_date = Tareek::Dates.today_date_in_dd_mm_yy_format
-    Time.now.strftime('%d-%m-%Y').should == today_date
-  end
-
-  it "should return today date in mm-dd-yyyy format" do
-    today_date = Tareek::Dates.today_date_in_mm_dd_yy_format
-    Time.now.strftime('%m-%d-%Y').should == today_date
-  end 
-
   it "should return true that '22-02-2014' is a weekend" do
     weekend = Tareek::Dates.weekend?("22-02-2014")
     weekend.should == true
