@@ -47,34 +47,34 @@ describe "Humanize Dates :: " do
     humanized_date.should == "12/01/2014 12:00:00 AM"
   end
 
-  # it "should return true that '22-02-2014' is a weekend" do
-  #   weekend = Tareek::Dates.weekend?("22-02-2014")
-  #   weekend.should == true
-  # end
+  it "should return true that '22-02-2014' is a weekend" do
+    weekend = Tareek::Dates.weekend?("22-02-2014")
+    weekend.should == true
+  end
 
-  # it "should return true that '24-02-2014' is a weekday" do
-  #   weekday = Tareek::Dates.weekday?("24-02-2014")
-  #   weekday.should == true
-  # end
+  it "should return true that '24-02-2014' is a weekday" do
+    weekday = Tareek::Dates.weekday?("24-02-2014")
+    weekday.should == true
+  end
 
-  # it "should return 29 days for Feb 2012" do
-  #   total_days = Tareek::Dates.days_in_a_month_of("Feb", 2012)
-  #   total_days.should == 29
-  # end
+  it "should return 29 days for Feb 2012" do
+    total_days = Tareek::Dates.days_in_a_month_of("Feb", 2012)
+    total_days.should == 29
+  end
 
-  # it "should return 28 days for Feb 2014" do
-  #   total_days = Tareek::Dates.days_in_a_month_of("Feb", 2014)
-  #   total_days.should == 28
-  # end
+  it "should return 28 days for Feb 2014" do
+    total_days = Tareek::Dates.days_in_a_month_of("Feb", 2014)
+    total_days.should == 28
+  end
 
-  # it "should return true that Feb 2012 is not of 28 days" do
-  #   total_days = Tareek::Dates.feb_month_of_28_days_for?("Feb", 2012)
-  #   total_days.should != 28
-  # end
+  it "should return true that Feb 2012 is not of 28 days" do
+    total_days = Tareek::Dates.feb_month_of_28_days_for?("Feb", 2012)
+    total_days.should != 28
+  end
 
-  # it "should return true that Feb 2014 is of 28 days" do
-  #   total_days = Tareek::Dates.feb_month_of_28_days_for?("Feb", 2014)
-  #   total_days.should == 28
-  # end
+  it "should return true that Feb 2014 is of 28 days" do
+    total_days = Tareek::Dates.feb_month_of_28_days_for?("Feb", 2014)
+    total_days.should == 28
+  end
 
 end
