@@ -67,14 +67,14 @@ describe "Humanize Dates :: " do
     total_days.should == 28
   end
 
-  it "should return true that Feb 2012 is not of 28 days" do
+  it "should return fals that Feb 2012 is of 28 days" do
     total_days = Tareek::Dates.feb_month_of_28_days_for?(2012)
-    total_days.should != 28
+    total_days.should == false
   end
 
   it "should return true that Feb 2014 is of 28 days" do
     total_days = Tareek::Dates.feb_month_of_28_days_for?(2014)
-    total_days.should == 28
+    total_days.should == true
   end
 
 end
