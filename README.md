@@ -56,8 +56,8 @@ Or install it yourself as:
 	Tareek::Dates.time_at_day('1/12/2014') #=> "12:00 AM"
   
 
-#### Returns omniture format with time
-	Tareek::Dates.omniture_format_with_time('1/12/2014') #=> "12/01/2014 12:00:00 AM"
+#### Returns omniture formatted date with time
+	Tareek::Dates.omniture_formated_with_time('1/12/2014') #=> "12/01/2014 12:00:00 AM"
   
 
 ## Contributing
