@@ -23,8 +23,8 @@ describe "Humanize Dates :: " do
   end
 
   it "should provide date for next specified weekday" do
-    pending "Dont know how to test this"
-    day_middle_of_past_month = Tareek::Dates.date_of_next("Sunday")
+    offset = Date.today.sunday? ? 0 : 7
+    Tareek::Dates.date_of_next("Sunday").should == Tareek::Dates.convert_to_date('Sunday') + offset
   end
 
   it "should return humanized date without day" do
