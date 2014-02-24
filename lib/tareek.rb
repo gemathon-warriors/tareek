@@ -59,7 +59,7 @@ module Tareek
         convert_to_date(date).strftime('%I:%M %p')
       end
 
-      def omniture_format_with_time(date)
+      def omniture_formatted_with_time(date)
         convert_to_date(date).strftime('%m/%d/%Y %I:%M:%S %p')
       end
 

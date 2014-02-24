@@ -42,9 +42,8 @@ describe "Humanize Dates :: " do
     humanized_date.should == "12:00 AM"
   end
 
-  it "should return omniture format with time" do
-    humanized_date = Tareek::Dates.omniture_format_with_time('1/12/2014')
-    humanized_date.should == "12/01/2014 12:00:00 AM"
+  it "should return omniture formatted date with time" do
+    Tareek::Dates.omniture_formatted_with_time('1/12/2014').should == "12/01/2014 12:00:00 AM"
   end
 
   it "should return today date in dd-mm-yyyy format" do
